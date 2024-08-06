@@ -1,0 +1,138 @@
+/*GENERAL*/
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+body {
+    background-color: #EBE9E1;
+}
+
+/*NAVIGATION BAR*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    margin-bottom: 50px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #101010;
+    margin-left: 30px;
+    font-family: "brother-1816", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav a:hover {
+    color: #E43D12
+}
+
+/*CONTENT SECTION*/
+
+.about-hero {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "upperGrid upperGrid"
+        "topGrid topGrid"
+        "leftGrid rightGrid"
+        "leftLowerGrid rightGrid"
+}
+
+.upperGrid {
+    grid-area: upperGrid;
+}
+.topGrid {
+    grid-area: topGrid;
+}
+.leftGrid {
+    grid-area: leftGrid;
+}
+.leftLowerGrid {
+    grid-area: leftLowerGrid;
+}
+.rightGrid {
+    grid-area: rightGrid;
+}
+
+.about-hero img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    font-family: "brother-1816", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+h3 {
+    font-family: "brother-1816", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5em;
+    padding-left: 5%;
+}
+
+p {
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 10%;
+    line-height: 2;
+}
+
+#name {
+    font-size: 7em;
+    white-space: nowrap;
+    overflow: visible;
+    position: relative;
+}
+
+/*BUTTON*/
+
+.button {
+    border: none;
+    color: white;
+    text-align: center;
+    margin-left: 10%;
+    padding: 20px;
+    font-family: "brother-1816", sans-serif;
+    font-weight: 500;
+    font-size: 300;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.resume {
+    background-color: #E43D12;
+    border-radius: 10px;
+}
+
+.resume:hover {
+    background-color: #DCCAB1;
+    color: #101010;
+}
+
+.sitemap {
+    background-color: #101010;
+    padding: 20px;
+    text-align: center;
+}
+.sitemap a {
+    text-decoration: none;
+    color: #DCCAB1;
+    margin-left: 30px;
+    font-family: "brother-1816", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
